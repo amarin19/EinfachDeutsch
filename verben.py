@@ -124,42 +124,7 @@ def Spiel(wpd, n = 0):
     pass
 
 def Worterbuch(wpd, aktion):
-    '''This function displays the dictionary built so far.'''
-
-    #If we are searching for a word, it takes the input and try to find the word in german first.
-    #IF the word is not found, it must have been written in Catalan. If that also fails, the word
-    #is not in the dictionary. If we want the whole dictionary, it goes printing and 10 words at
-    #a time until it is finished (by pressing space) or until the user writes "exit" or "e" in any
-    #possible variant.
-
-    '''PENDENT DE REESCRIURE.
-    template = '{:^7} | {:^7} | {:^15} | {:^15}'
-    if aktion == 's':
-        Wort = input('Schreiben die Wort bitte [DE oder CAT]: ').capitalize()
-        data = wpd.loc[wpd.Singular == Wort].values
-        if data.size==0:
-            try:
-                data = wpd.loc[wpd.Bedeutung == Wort].values[0]
-            except:
-                print('\n[ ! ] Das Wort ist in die Worterbuch nicht. [ ! ]\n')
-                return
-        else:
-            data = data[0]
-        print()
-        print(template.format('Artikel','Plural','Wort','Bedeutung'))
-        print('='*54)
-        print(template.format(data[2], data[-2], data[0], data[-3]))
-    else:
-        print(template.format('Artikel','Plural','Wort','Bedeutung'))
-        print('='*54)
-        for i in range(wpd.shape[0]):
-            data = wpd.loc[i].values
-            print(template.format(data[2], data[-2], data[0], data[-3]))
-            if not (i+1)%10:
-                more = input().lower()
-                if 'e' in more:
-                    break
-    print()'''
+    '''Function to be built.'''
     pass
 
 
